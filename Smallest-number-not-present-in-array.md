@@ -1,4 +1,4 @@
-# CodilityPerformSolution
+# Codility-Solution
 This is the solution for smallest number which is not present in array.
 Example : 
 1. arr[]={1,2,4,5};
@@ -20,7 +20,7 @@ public class Solution {
 
 	public static void main(String[] args) {
 
-		int arr[] = { -3, -1, 3, 5, -4 };
+		int arr[] = {1,2,4,5};
 		int smallNumber = 1;
 
 		Arrays.sort(arr);
