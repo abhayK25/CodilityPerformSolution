@@ -10,6 +10,9 @@ Example :
 3. arr[]={-1,-2};
    output : 1
 
+4. arr[]={4,2,1,5};
+   output : 3   
+
 ```java
 import java.util.Arrays;
 import java.util.stream.IntStream;
@@ -22,10 +25,6 @@ public class Solution {
 
 		Arrays.sort(arr);
 		for (int i : arr) {
-
-			if (i < 0) {
-				smallNumber = 1;
-			}
 			boolean contains = IntStream.of(arr).anyMatch(x -> x == (i + 1));
 			if (contains == false) {
 				smallNumber = i + 1;
